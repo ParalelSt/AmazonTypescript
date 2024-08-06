@@ -275,7 +275,7 @@ export const Nav = styled.nav`
       .fa-count-icon {
         position: absolute;
         right: 0.6em;
-        bottom: 0.9em;
+        bottom: 1.1em;
         height: 0.8em;
       }
     }

@@ -91,7 +91,7 @@ function RightNav() {
           <span className="cart-icon">
             <PiShoppingCartSimpleLight className="fa-icon shopping-cart" />
           </span>
-          <span className="item-count">
+          <span className="item-count" id="cartItemCount">
             <Fa0 className="fa-count-icon"></Fa0>
           </span>
         </div>
