@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { BsInfoLg } from "react-icons/bs";
 import { FaCaretRight } from "react-icons/fa6";
 
-const SignInContainer = styled.div`
+const SignUpContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,10 +139,10 @@ const SignInContainer = styled.div`
   }
 `;
 
-export const SignIn = () => {
+export const SignUp = () => {
   return (
     <>
-      <SignInContainer>
+      <SignUpContainer>
         <div className="nav">
           <img src="Logo_dark.svg" />
         </div>
@@ -200,7 +200,7 @@ export const SignIn = () => {
             </div>
           </div>
         </div>
-      </SignInContainer>
+      </SignUpContainer>
     </>
   );
 };

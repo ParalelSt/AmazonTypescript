@@ -53,9 +53,16 @@ export const CartContentContainer = styled.div`
 
           .sign-in-button,
           .sign-up-button {
-            padding: 0.2em 0.7em;
+            padding: 0.4em 0.7em;
             border: 1px solid rgb(0, 0, 0, 0.5);
             border-radius: 20px;
+            font-size: 1em;
+            text-align: center;
+
+            &:visited,
+            & {
+              color: black;
+            }
           }
 
           .sign-in-button {

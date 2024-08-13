@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar";
 import Content from "./Components/Content";
 import ItemCart from "./Components/ItemCart";
 import Error404 from "./Components/Error404";
-import { SignIn } from "./Components/Sign_in/SignIn";
+import { SignUp } from "./Components/Sign_up/SignUp";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Content></Content>}></Route>
         <Route path="/item-cart" element={<ItemCart></ItemCart>}></Route>
         <Route path="*" element={<Error404></Error404>}></Route>
-        <Route path="/sign-in" element={<SignIn></SignIn>}></Route>
+        <Route path="/sign-up" element={<SignUp></SignUp>}></Route>
       </Routes>
     </>
   );

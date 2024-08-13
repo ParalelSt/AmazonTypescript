@@ -1,5 +1,6 @@
 import { CartContentContainer } from "./CartContent.styled";
 import { ProductCarousel } from "../ProductsContent/ProductCarousel";
+import { Link } from "react-router-dom";
 
 function CartContent() {
   return (
@@ -16,10 +17,12 @@ function CartContent() {
                 <a>Shop today&apos;s deals</a>
               </div>
               <div className="lower">
-                <button className="sign-in-button">
+                <Link to="/sign-in" className="sign-in-button">
                   Sign in to your account
-                </button>
-                <button className="sign-up-button">Sign up now</button>
+                </Link>
+                <Link to="/sign-up" className="sign-up-button">
+                  Sign up now
+                </Link>
               </div>
             </div>
           </div>
