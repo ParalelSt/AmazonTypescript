@@ -57,12 +57,26 @@ const SignUpContainer = styled.div`
           padding: 0 0 0.1em 0.1em;
         }
 
+        @keyframes outlineColor {
+          from {
+            outline: 2px solid transparent;
+          }
+          to {
+            outline: 2px solid lightblue;
+          }
+        }
+
         input {
           border: 1px solid rgb(0, 0, 0, 0.3);
           border-radius: 4px;
           font-size: 0.9em;
           padding: 0.45em 0.5em;
           line-height: normal;
+          outline: none;
+
+          &:focus {
+            animation: outlineColor 150ms forwards;
+          }
         }
 
         .icon-holder {
