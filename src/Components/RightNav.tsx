@@ -10,7 +10,7 @@ function RightNav() {
   const navigate = useNavigate();
 
   const toItemCart = () => {
-    navigate("/item-cart");
+    navigate("/portfolio/item-cart");
   };
 
   return (

@@ -4,7 +4,7 @@ function Error404() {
   return (
     <div>
       404 Not Found. <br></br>
-      <Link to="/">Home</Link>
+      <Link to="/AmazonTypeScript/">Home</Link>
     </div>
   );
 }
