@@ -7,6 +7,7 @@ const SignUpContainer = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: white;
+  height: 100vh;
 
   .nav {
     display: flex;
@@ -28,6 +29,7 @@ const SignUpContainer = styled.div`
     border-radius: 8px;
     width: 22.3em;
     height: 37em;
+    margin-bottom: 1em;
 
     a {
       color: #1975c6;
@@ -151,9 +153,33 @@ const SignUpContainer = styled.div`
       }
     }
   }
+
+  .lower-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .top {
+      display: flex;
+      gap: 2em;
+      margin-bottom: 1.2em;
+    }
+
+    .bottom {
+      color: #696969;
+    }
+
+    .row {
+      font-size: 0.7em;
+    }
+  }
 `;
 
 export const SignUp = () => {
+  const startYear = 1996;
+  const currentYear = new Date().getFullYear();
+  const displayYear = `${startYear + "-" + currentYear}`;
+
   return (
     <>
       <SignUpContainer>
@@ -212,6 +238,20 @@ export const SignUp = () => {
                 <FaCaretRight size={9} className="icon" />
               </a>
             </div>
+          </div>
+        </div>
+        <div className="lower-container">
+          <div className="row top">
+            <a href="#">Conditions of use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Help</a>
+            <a href="#">Cookies Notice</a>
+            <a href="#">Interest-Based Ads Notice</a>
+          </div>
+          <div className="row bottom">
+            <span>
+              &copy; {displayYear}, Amazon.com, Inc. or its affiliates
+            </span>
           </div>
         </div>
       </SignUpContainer>

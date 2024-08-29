@@ -1,11 +1,12 @@
 import { FaBars } from "react-icons/fa6";
 import NavBarBottomDropDown from "./NavBarBottomDropDown";
 import { useEffect, useRef, useState } from "react";
+import { Any } from "typeorm";
 
 function NavbarBottom() {
   const [isOpen, setIsOpen] = useState(false);
 
-  let dropDownRef = useRef();
+  const dropDownRef = useRef();
 
   const openDropDown = () => {
     setIsOpen(true);

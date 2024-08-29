@@ -67,7 +67,7 @@ export const Nav = styled.nav`
       top: 5.3em;
       left: 5.5em;
       width: 450px;
-      height: 130px;
+      height: 120px;
       padding: 0.4em 1em 0.1em 1em;
       border-radius: 3px;
       transition: visibility 100ms;
@@ -84,6 +84,7 @@ export const Nav = styled.nav`
       .upper {
         display: flex;
         font-size: 15px;
+        margin-top: 0.2em;
       }
 
       .lower {

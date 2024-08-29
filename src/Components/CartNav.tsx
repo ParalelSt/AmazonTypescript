@@ -9,15 +9,15 @@ function CartNav() {
           <Link className="home-page" to="/">
             Amazon.co.uk
           </Link>
-          <Link to="/today-deals">Today&apos;s Deals</Link>
-          <Link to="/warehouse-deals">Warehouse Deals</Link>
-          <Link to="/outlet">Outlet</Link>
-          <Link to="/subscribe-save">Subscribe & Save</Link>
-          <Link to="/vouchers">Vouchers</Link>
-          <Link to="/prime-video">Prime Video</Link>
-          <Link to="/prime-student">Prime Student</Link>
-          <Link to="/mobile-apps">Mobile Apps</Link>
-          <Link to="/pickup-locations">Amazon Pickup Locations</Link>
+          <Link to="/portfolio/today-deals">Today&apos;s Deals</Link>
+          <Link to="/portfolio/warehouse-deals">Warehouse Deals</Link>
+          <Link to="/portfolio/outlet">Outlet</Link>
+          <Link to="/portfolio/subscribe-save">Subscribe & Save</Link>
+          <Link to="/portfolio/vouchers">Vouchers</Link>
+          <Link to="/portfolio/prime-video">Prime Video</Link>
+          <Link to="/portfolio/prime-student">Prime Student</Link>
+          <Link to="/portfolio/mobile-apps">Mobile Apps</Link>
+          <Link to="/portfolio/pickup-locations">Amazon Pickup Locations</Link>
         </div>
       </CartNavContainer>
     </>
