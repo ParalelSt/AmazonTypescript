@@ -6,7 +6,7 @@ function LeftNav() {
   const navigate = useNavigate();
 
   const toHome = () => {
-    navigate("/portfolio/");
+    navigate("/AmazonTypeScript/");
   };
 
   return (

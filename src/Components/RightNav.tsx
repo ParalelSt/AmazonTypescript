@@ -10,7 +10,7 @@ function RightNav() {
   const navigate = useNavigate();
 
   const toItemCart = () => {
-    navigate("/portfolio/item-cart");
+    navigate("/AmazonTypeScript/item-cart");
   };
 
   return (
