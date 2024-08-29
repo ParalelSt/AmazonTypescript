@@ -26,7 +26,7 @@ function LeftNavDropDown() {
         <div className="arrow"></div>
         <div className="upper">
           <span>
-            We&apos;re showing you items that dispatch to
+            We&apos;re showing you items that dispatch to{""}
             <span className="country">Croatia</span>. To see items that dispatch
             to a different country, change your delivery address.
           </span>
