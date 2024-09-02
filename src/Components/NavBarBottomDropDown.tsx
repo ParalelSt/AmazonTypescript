@@ -1,7 +1,11 @@
 import { NavBottomDropDownContainer } from "./NavBottomDropDown.styled";
 import { useState } from "react";
 
-function NavBarBottomDropDown(props) {
+interface NavBarBottomProps {
+  isOpen: boolean;
+}
+
+function NavBarBottomDropDown(props: NavBarBottomProps) {
   const [isOpen, setIsOpen] = useState(false);
   let name = "";
 
