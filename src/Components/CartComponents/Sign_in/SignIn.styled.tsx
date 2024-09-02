@@ -9,6 +9,10 @@ export const SignInContainer = styled.div`
 
   a {
     color: #3888cd;
+
+    &:hover {
+      color: rgb(196, 85, 0);
+    }
   }
 
   .logo-container {
