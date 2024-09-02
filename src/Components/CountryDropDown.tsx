@@ -1,10 +1,14 @@
 import { CountryDropDownContainer } from "./CountryDropDown.styled";
 import Flag from "react-flagkit";
 
-function CountryDropDown() {
+interface CountryDropDownProps {
+  className?: string;
+}
+
+const CountryDropDown: React.FC<CountryDropDownProps> = ({ className }) => {
   return (
     <>
-      <CountryDropDownContainer>
+      <CountryDropDownContainer className={className}>
         <div className="upper">
           <div className="top-triangle"></div>
           <div className="upper-content">
@@ -38,6 +42,6 @@ function CountryDropDown() {
       </CountryDropDownContainer>
     </>
   );
-}
+};
 
 export default CountryDropDown;

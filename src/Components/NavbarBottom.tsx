@@ -1,12 +1,11 @@
 import { FaBars } from "react-icons/fa6";
 import NavBarBottomDropDown from "./NavBarBottomDropDown";
 import { useEffect, useRef, useState } from "react";
-import { Any } from "typeorm";
 
 function NavbarBottom() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const dropDownRef = useRef();
+  const dropDownRef = useRef<HTMLDivElement>(null);
 
   const openDropDown = () => {
     setIsOpen(true);
@@ -18,7 +17,10 @@ function NavbarBottom() {
 
   useEffect(() => {
     document.addEventListener("mousedown", (event) => {
-      if (dropDownRef.current && !dropDownRef.current.contains(event.target)) {
+      if (
+        dropDownRef.current &&
+        !dropDownRef.current.contains(event.target as Node)
+      ) {
         closeDropDown();
       }
     });
