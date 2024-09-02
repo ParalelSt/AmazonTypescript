@@ -7,6 +7,10 @@ export const SignInContainer = styled.div`
   align-items: center;
   height: 100vh;
 
+  a {
+    color: #3888cd;
+  }
+
   .logo-container {
     display: flex;
     justify-content: center;
@@ -83,7 +87,6 @@ export const SignInContainer = styled.div`
           .top-text {
             a {
               text-decoration: underline;
-              color: #3888cd;
             }
 
             margin-bottom: 1.8em;
