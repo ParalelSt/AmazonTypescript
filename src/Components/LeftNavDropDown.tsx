@@ -1,22 +1,30 @@
 import { useEffect, useState, useRef } from "react";
 
 function LeftNavDropDown() {
-  const dismissButtonRef = useRef(null);
+  const dismissButtonRef = useRef<HTMLButtonElement | null>(null);
   const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
-    const dropDownMenu = document.querySelector(".drop-down-container");
-    dropDownMenu.style.display = "flex";
+    const dropDownMenu = document.querySelector(
+      ".drop-down-container"
+    ) as HTMLElement;
+    if (dropDownMenu) {
+      dropDownMenu.style.display = "flex";
+    }
 
     const changeDisplay = () => {
       setIsOpen(!isOpen);
     };
 
     const button = dismissButtonRef.current;
-    button.addEventListener("click", changeDisplay);
+    if (button) {
+      button.addEventListener("click", changeDisplay);
+    }
 
     return () => {
-      button.removeEventListener("click", changeDisplay);
+      if (button) {
+        button.removeEventListener("click", changeDisplay);
+      }
     };
   }, [isOpen]);
 
