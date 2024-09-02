@@ -5,7 +5,7 @@ interface CountryDropDownProps {
   className?: string;
 }
 
-const CountryDropDown: React.FC<CountryDropDownProps> = ({ className }) => {
+const CountryDropDown = ({ className }: CountryDropDownProps) => {
   return (
     <>
       <CountryDropDownContainer className={className}>
