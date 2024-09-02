@@ -1,4 +1,6 @@
-export const PrevArrow = (props) => {
+import { ArrowProps } from "./ArrowNext";
+
+export const PrevArrow = (props: ArrowProps) => {
   const { className, style, onClick } = props;
   return (
     <div

@@ -4,7 +4,11 @@ const StarRatingContainer = styled.div`
   display: block;
 `;
 
-export const Rating = ({ rating }) => {
+interface RatingType {
+  rating: number;
+}
+
+export const Rating = ({ rating }: RatingType) => {
   return (
     <>
       <StarRatingContainer>

@@ -1,4 +1,10 @@
-export const NextArrow = (props) => {
+export interface ArrowProps {
+  className?: string;
+  style?: React.CSSProperties;
+  onClick?: React.MouseEventHandler<HTMLDivElement>;
+}
+
+export const NextArrow = (props: ArrowProps) => {
   const { className, style, onClick } = props;
   return (
     <div
