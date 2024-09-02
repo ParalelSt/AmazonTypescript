@@ -8,8 +8,7 @@ import { useLocation } from "react-router-dom";
 
 function Navbar() {
   const { pathname } = useLocation();
-  if (pathname === "/portfolio/sign-in" || pathname === "/portfolio/sign-up")
-    return null;
+  if (pathname === "/sign-in" || pathname === "/sign-up") return null;
 
   return (
     <>

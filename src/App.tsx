@@ -13,20 +13,11 @@ function App() {
       <GlobalStyles></GlobalStyles>
       <Navbar></Navbar>
       <Routes>
-        <Route path="/AmazonTypescript/" element={<Content></Content>}></Route>
-        <Route
-          path="/AmazonTypescript/item-cart"
-          element={<ItemCart></ItemCart>}
-        ></Route>
+        <Route path="/" element={<Content></Content>}></Route>
+        <Route path="/item-cart" element={<ItemCart></ItemCart>}></Route>
         <Route path="*" element={<Error404></Error404>}></Route>
-        <Route
-          path="/AmazonTypescript/sign-up"
-          element={<SignUp></SignUp>}
-        ></Route>
-        <Route
-          path="/AmazonTypescript/sign-in"
-          element={<SignIn></SignIn>}
-        ></Route>
+        <Route path="/sign-up" element={<SignUp></SignUp>}></Route>
+        <Route path="/sign-in" element={<SignIn></SignIn>}></Route>
       </Routes>
     </>
   );
