@@ -83,6 +83,7 @@ export const SignInContainer = styled.div`
           .top-text {
             a {
               text-decoration: underline;
+              color: #3888cd;
             }
 
             margin-bottom: 1.8em;
@@ -166,4 +167,3 @@ export const SignInContainer = styled.div`
     }
   }
 `;
-
