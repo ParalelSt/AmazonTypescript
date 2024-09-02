@@ -35,8 +35,8 @@ function LeftNavDropDown() {
         <div className="upper">
           <span>
             We&apos;re showing you items that dispatch to{""}
-            <span className="country">Croatia</span>. To see items that dispatch
-            to a different country, change your delivery address.
+            <span className="country"> Croatia</span>. To see items that
+            dispatch to a different country, change your delivery address.
           </span>
         </div>
         <div className="lower">

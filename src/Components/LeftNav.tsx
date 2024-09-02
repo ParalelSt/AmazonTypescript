@@ -22,8 +22,8 @@ function LeftNav() {
             </div>
           </div>
           <div className="right">
-            <span className="message">Deliver to&nbsp;</span>
-            <span className="message-bottom"> Croatia</span>
+            <span className="message">Deliver to</span>
+            <span className="message-bottom">Croatia</span>
           </div>
         </div>
         <LeftNavDropDown></LeftNavDropDown>
